@@ -1,0 +1,207 @@
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("groups")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("categories")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("skills")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("members")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:COMMIT
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:SELECT name FROM sqlite_master WHERE type='table' AND name NOT LIKE 'sqlite~_%' ESCAPE '~' ORDER BY name
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:SELECT groups.id AS groups_id, groups.name AS groups_name, groups.description AS groups_description 
+FROM groups
+INFO:sqlalchemy.engine.Engine:[generated in 0.00008s] ()
+INFO:sqlalchemy.engine.Engine:SELECT groups.id AS groups_id, groups.name AS groups_name, groups.description AS groups_description 
+FROM groups 
+WHERE groups.name = ?
+ LIMIT ? OFFSET ?
+INFO:sqlalchemy.engine.Engine:[generated in 0.00013s] ('Group A', 1, 0)
+INFO:sqlalchemy.engine.Engine:SELECT members.id AS members_id, members.name AS members_name, members.group_id AS members_group_id 
+FROM members 
+WHERE members.group_id = ?
+INFO:sqlalchemy.engine.Engine:[generated in 0.00008s] (1,)
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:SELECT groups.id AS groups_id, groups.name AS groups_name, groups.description AS groups_description 
+FROM groups
+INFO:sqlalchemy.engine.Engine:[cached since 0.1323s ago] ()
+INFO:sqlalchemy.engine.Engine:SELECT groups.id AS groups_id, groups.name AS groups_name, groups.description AS groups_description 
+FROM groups 
+WHERE groups.name = ?
+ LIMIT ? OFFSET ?
+INFO:sqlalchemy.engine.Engine:[cached since 0.1317s ago] ('Group A', 1, 0)
+INFO:sqlalchemy.engine.Engine:SELECT categories.id AS categories_id, categories.name AS categories_name, categories.group_id AS categories_group_id 
+FROM categories 
+WHERE categories.group_id = ?
+INFO:sqlalchemy.engine.Engine:[generated in 0.00007s] (1,)
+INFO:sqlalchemy.engine.Engine:SELECT categories.id AS categories_id, categories.name AS categories_name, categories.group_id AS categories_group_id 
+FROM categories 
+WHERE categories.name = ?
+ LIMIT ? OFFSET ?
+INFO:sqlalchemy.engine.Engine:[generated in 0.00007s] ('プログラミング', 1, 0)
+INFO:sqlalchemy.engine.Engine:SELECT skills.id AS skills_id, skills.name AS skills_name, skills.description AS skills_description, skills.level AS skills_level, skills.category_id AS skills_category_id 
+FROM skills 
+WHERE skills.category_id = ?
+INFO:sqlalchemy.engine.Engine:[generated in 0.00006s] (1,)
+INFO:sqlalchemy.engine.Engine:SELECT categories.id AS categories_id, categories.name AS categories_name, categories.group_id AS categories_group_id 
+FROM categories 
+WHERE categories.name = ?
+ LIMIT ? OFFSET ?
+INFO:sqlalchemy.engine.Engine:[cached since 0.001538s ago] ('デザイン', 1, 0)
+INFO:sqlalchemy.engine.Engine:SELECT skills.id AS skills_id, skills.name AS skills_name, skills.description AS skills_description, skills.level AS skills_level, skills.category_id AS skills_category_id 
+FROM skills 
+WHERE skills.category_id = ?
+INFO:sqlalchemy.engine.Engine:[cached since 0.0009134s ago] (2,)
+INFO:sqlalchemy.engine.Engine:SELECT categories.id AS categories_id, categories.name AS categories_name, categories.group_id AS categories_group_id 
+FROM categories 
+WHERE categories.name = ?
+ LIMIT ? OFFSET ?
+INFO:sqlalchemy.engine.Engine:[cached since 0.002071s ago] ('BBB', 1, 0)
+INFO:sqlalchemy.engine.Engine:SELECT skills.id AS skills_id, skills.name AS skills_name, skills.description AS skills_description, skills.level AS skills_level, skills.category_id AS skills_category_id 
+FROM skills 
+WHERE skills.category_id = ?
+INFO:sqlalchemy.engine.Engine:[cached since 0.001433s ago] (5,)
+objc[21255]: Class QMacAutoReleasePoolTracker is implemented in both /Users/sanadatakeshi/.pyenv/versions/3.10.13/lib/python3.10/site-packages/PyQt5/Qt5/lib/QtCore.framework/Versions/5/QtCore (0x106419200) and /opt/homebrew/Cellar/qt@5/5.15.16/lib/QtCore.framework/Versions/5/QtCore (0x126aa92f0). One of the two will be used. Which one is undefined.
+objc[21255]: Class QT_ROOT_LEVEL_POOL__THESE_OBJECTS_WILL_BE_RELEASED_WHEN_QAPP_GOES_OUT_OF_SCOPE is implemented in both /Users/sanadatakeshi/.pyenv/versions/3.10.13/lib/python3.10/site-packages/PyQt5/Qt5/lib/QtCore.framework/Versions/5/QtCore (0x106419278) and /opt/homebrew/Cellar/qt@5/5.15.16/lib/QtCore.framework/Versions/5/QtCore (0x126aa9368). One of the two will be used. Which one is undefined.
+objc[21255]: Class KeyValueObserver is implemented in both /Users/sanadatakeshi/.pyenv/versions/3.10.13/lib/python3.10/site-packages/PyQt5/Qt5/lib/QtCore.framework/Versions/5/QtCore (0x1064192a0) and /opt/homebrew/Cellar/qt@5/5.15.16/lib/QtCore.framework/Versions/5/QtCore (0x126aa9390). One of the two will be used. Which one is undefined.
+objc[21255]: Class RunLoopModeTracker is implemented in both /Users/sanadatakeshi/.pyenv/versions/3.10.13/lib/python3.10/site-packages/PyQt5/Qt5/lib/QtCore.framework/Versions/5/QtCore (0x1064192f0) and /opt/homebrew/Cellar/qt@5/5.15.16/lib/QtCore.framework/Versions/5/QtCore (0x126aa93e0). One of the two will be used. Which one is undefined.
+INFO:sqlalchemy.engine.Engine:SELECT groups.id AS groups_id, groups.name AS groups_name, groups.description AS groups_description 
+FROM groups
+INFO:sqlalchemy.engine.Engine:[cached since 0.299s ago] ()
+INFO:sqlalchemy.engine.Engine:SELECT groups.id AS groups_id, groups.name AS groups_name, groups.description AS groups_description 
+FROM groups 
+WHERE groups.name = ?
+ LIMIT ? OFFSET ?
+INFO:sqlalchemy.engine.Engine:[cached since 0.2981s ago] ('Group A', 1, 0)
+INFO:sqlalchemy.engine.Engine:SELECT categories.id AS categories_id, categories.name AS categories_name, categories.group_id AS categories_group_id 
+FROM categories 
+WHERE categories.group_id = ?
+INFO:sqlalchemy.engine.Engine:[cached since 0.1661s ago] (1,)
+INFO:sqlalchemy.engine.Engine:SELECT categories.id AS categories_id, categories.name AS categories_name, categories.group_id AS categories_group_id 
+FROM categories 
+WHERE categories.name = ?
+ LIMIT ? OFFSET ?
+INFO:sqlalchemy.engine.Engine:[cached since 0.1659s ago] ('プログラミング', 1, 0)
+INFO:sqlalchemy.engine.Engine:SELECT skills.id AS skills_id, skills.name AS skills_name, skills.description AS skills_description, skills.level AS skills_level, skills.category_id AS skills_category_id 
+FROM skills 
+WHERE skills.category_id = ?
+INFO:sqlalchemy.engine.Engine:[cached since 0.1653s ago] (1,)
+INFO:sqlalchemy.engine.Engine:SELECT categories.id AS categories_id, categories.name AS categories_name, categories.group_id AS categories_group_id 
+FROM categories 
+WHERE categories.name = ?
+ LIMIT ? OFFSET ?
+INFO:sqlalchemy.engine.Engine:[cached since 0.1664s ago] ('デザイン', 1, 0)
+INFO:sqlalchemy.engine.Engine:SELECT skills.id AS skills_id, skills.name AS skills_name, skills.description AS skills_description, skills.level AS skills_level, skills.category_id AS skills_category_id 
+FROM skills 
+WHERE skills.category_id = ?
+INFO:sqlalchemy.engine.Engine:[cached since 0.1658s ago] (2,)
+INFO:sqlalchemy.engine.Engine:SELECT categories.id AS categories_id, categories.name AS categories_name, categories.group_id AS categories_group_id 
+FROM categories 
+WHERE categories.name = ?
+ LIMIT ? OFFSET ?
+INFO:sqlalchemy.engine.Engine:[cached since 0.1669s ago] ('BBB', 1, 0)
+INFO:sqlalchemy.engine.Engine:SELECT skills.id AS skills_id, skills.name AS skills_name, skills.description AS skills_description, skills.level AS skills_level, skills.category_id AS skills_category_id 
+FROM skills 
+WHERE skills.category_id = ?
+INFO:sqlalchemy.engine.Engine:[cached since 0.1662s ago] (5,)
+INFO:sqlalchemy.engine.Engine:SELECT groups.id AS groups_id, groups.name AS groups_name, groups.description AS groups_description 
+FROM groups 
+WHERE groups.name = ?
+ LIMIT ? OFFSET ?
+INFO:sqlalchemy.engine.Engine:[cached since 0.3002s ago] ('Group B', 1, 0)
+INFO:sqlalchemy.engine.Engine:SELECT categories.id AS categories_id, categories.name AS categories_name, categories.group_id AS categories_group_id 
+FROM categories 
+WHERE categories.group_id = ?
+INFO:sqlalchemy.engine.Engine:[cached since 0.1681s ago] (2,)
+INFO:sqlalchemy.engine.Engine:SELECT categories.id AS categories_id, categories.name AS categories_name, categories.group_id AS categories_group_id 
+FROM categories 
+WHERE categories.name = ?
+ LIMIT ? OFFSET ?
+INFO:sqlalchemy.engine.Engine:[cached since 0.1677s ago] ('開発', 1, 0)
+INFO:sqlalchemy.engine.Engine:SELECT skills.id AS skills_id, skills.name AS skills_name, skills.description AS skills_description, skills.level AS skills_level, skills.category_id AS skills_category_id 
+FROM skills 
+WHERE skills.category_id = ?
+INFO:sqlalchemy.engine.Engine:[cached since 0.1673s ago] (3,)
+INFO:sqlalchemy.engine.Engine:SELECT categories.id AS categories_id, categories.name AS categories_name, categories.group_id AS categories_group_id 
+FROM categories 
+WHERE categories.name = ?
+ LIMIT ? OFFSET ?
+INFO:sqlalchemy.engine.Engine:[cached since 0.1684s ago] ('マーケティング', 1, 0)
+INFO:sqlalchemy.engine.Engine:SELECT skills.id AS skills_id, skills.name AS skills_name, skills.description AS skills_description, skills.level AS skills_level, skills.category_id AS skills_category_id 
+FROM skills 
+WHERE skills.category_id = ?
+INFO:sqlalchemy.engine.Engine:[cached since 0.1677s ago] (4,)
+INFO:sqlalchemy.engine.Engine:SELECT groups.id AS groups_id, groups.name AS groups_name, groups.description AS groups_description 
+FROM groups 
+WHERE groups.name = ?
+ LIMIT ? OFFSET ?
+INFO:sqlalchemy.engine.Engine:[cached since 0.3017s ago] ('Group A', 1, 0)
+INFO:sqlalchemy.engine.Engine:SELECT members.id AS members_id, members.name AS members_name, members.group_id AS members_group_id 
+FROM members 
+WHERE members.group_id = ?
+INFO:sqlalchemy.engine.Engine:[cached since 0.3011s ago] (1,)
+INFO:sqlalchemy.engine.Engine:SELECT groups.id AS groups_id, groups.name AS groups_name, groups.description AS groups_description 
+FROM groups 
+WHERE groups.name = ?
+ LIMIT ? OFFSET ?
+INFO:sqlalchemy.engine.Engine:[cached since 0.3021s ago] ('Group B', 1, 0)
+INFO:sqlalchemy.engine.Engine:SELECT members.id AS members_id, members.name AS members_name, members.group_id AS members_group_id 
+FROM members 
+WHERE members.group_id = ?
+INFO:sqlalchemy.engine.Engine:[cached since 0.3015s ago] (2,)
+DEBUG:standalone_main_app.plugins.staged_target.staged_target_tab:グループコンボボックスを更新
+DEBUG:standalone_main_app.plugins.staged_target.staged_target_tab:グループを追加: Group A
+DEBUG:standalone_main_app.plugins.staged_target.staged_target_tab:グループを追加: Group B
+DEBUG:standalone_main_app.plugins.staged_target.staged_target_tab:update_category_combo が呼び出されました
+DEBUG:standalone_main_app.plugins.staged_target.staged_target_tab:選択されたグループID: Group A
+DEBUG:standalone_main_app.plugins.staged_target.staged_target_tab:選択されたグループデータ: {'name': 'Group A', 'categories': {'プログラミング': {'name': 'プログラミング', 'skills': {'Python': {'name': 'Python'}, 'JavaScript': {'name': 'JavaScript'}, 'AAA': {'name': 'AAA'}, 'CCC': {'name': 'CCC'}, 'DDD': {'name': 'DDD'}, 'EEE': {'name': 'EEE'}, 'FFF': {'name': 'FFF'}}}, 'デザイン': {'name': 'デザイン', 'skills': {'UI設計': {'name': 'UI設計'}, 'イラスト': {'name': 'イラスト'}}}, 'BBB': {'name': 'BBB', 'skills': {}}}}
+DEBUG:standalone_main_app.plugins.staged_target.staged_target_tab:カテゴリを追加: name=プログラミング, id=プログラミング
+DEBUG:standalone_main_app.plugins.staged_target.staged_target_tab:カテゴリを追加: name=デザイン, id=デザイン
+DEBUG:standalone_main_app.plugins.staged_target.staged_target_tab:カテゴリを追加: name=BBB, id=BBB
+DEBUG:standalone_main_app.plugins.staged_target.staged_target_tab:update_skill_table が呼び出されました
+DEBUG:standalone_main_app.plugins.staged_target.staged_target_tab:選択されたグループID: Group A, カテゴリID: プログラミング
+DEBUG:standalone_main_app.plugins.staged_target.staged_target_tab:スキルデータ: {'Python': {'name': 'Python'}, 'JavaScript': {'name': 'JavaScript'}, 'AAA': {'name': 'AAA'}, 'CCC': {'name': 'CCC'}, 'DDD': {'name': 'DDD'}, 'EEE': {'name': 'EEE'}, 'FFF': {'name': 'FFF'}}
+DEBUG:standalone_main_app.plugins.staged_target.staged_target_tab:スキルを追加: name=Python, id=Python
+DEBUG:standalone_main_app.plugins.staged_target.staged_target_tab:スキルを追加: name=JavaScript, id=JavaScript
+DEBUG:standalone_main_app.plugins.staged_target.staged_target_tab:スキルを追加: name=AAA, id=AAA
+DEBUG:standalone_main_app.plugins.staged_target.staged_target_tab:スキルを追加: name=CCC, id=CCC
+DEBUG:standalone_main_app.plugins.staged_target.staged_target_tab:スキルを追加: name=DDD, id=DDD
+DEBUG:standalone_main_app.plugins.staged_target.staged_target_tab:スキルを追加: name=EEE, id=EEE
+DEBUG:standalone_main_app.plugins.staged_target.staged_target_tab:スキルを追加: name=FFF, id=FFF
+DEBUG:standalone_main_app.plugins.staged_target.staged_target_tab:スキル選択変更シグナル発行: 0個のスキルが選択されています
+DEBUG:standalone_main_app.plugins.staged_target.components.stage_selector:スキル選択を設定: 0個のスキルが選択されました
+DEBUG:standalone_main_app.plugins.staged_target.components.stage_selector:スキル選択を保存しました: 選択なし
+DEBUG:standalone_main_app.plugins.staged_target.staged_target_tab:スキル選択変更シグナル発行: 0個のスキルが選択されています
+DEBUG:standalone_main_app.plugins.staged_target.components.stage_selector:スキル選択を設定: 0個のスキルが選択されました
+DEBUG:standalone_main_app.plugins.staged_target.components.stage_selector:スキル選択を保存しました: 選択なし
+2025-03-13 05:48:16.557 python[21255:18420206] +[IMKClient subclass]: chose IMKClient_Modern
+2025-03-13 05:48:16.557 python[21255:18420206] +[IMKInputSession subclass]: chose IMKInputSession_Modern
+DEBUG:matplotlib:matplotlib data path: /Users/sanadatakeshi/.pyenv/versions/3.10.13/lib/python3.10/site-packages/matplotlib/mpl-data
+DEBUG:matplotlib:CONFIGDIR=/Users/sanadatakeshi/.matplotlib
+DEBUG:matplotlib:interactive is False
+DEBUG:matplotlib:platform is darwin
+DEBUG:matplotlib:CACHEDIR=/Users/sanadatakeshi/.matplotlib
+DEBUG:matplotlib.font_manager:Using fontManager instance from /Users/sanadatakeshi/.matplotlib/fontlist-v390.json
+INFO:standalone_main_app.plugins.staged_target.components.stage_selector:===== get_custom_skill_targets 呼び出し =====
+INFO:standalone_main_app.plugins.staged_target.components.stage_selector:返却する目標値: {}
+INFO:standalone_main_app.plugins.staged_target.components.radar_chart_dialog:RadarChartDialog初期化: 3個のステージデータ
+ERROR:standalone_main_app.plugins.staged_target.components.radar_chart_dialog:RadarChartDialog の初期化中にエラーが発生しました: 'RadarChartDialog' object has no attribute 'draw_radar_chart'
+Traceback (most recent call last):
+  File "/Users/sanadatakeshi/Desktop/new_staged_target_project/standalone_main_app/plugins/staged_target/components/radar_chart_dialog.py", line 40, in __init__
+    self.setup_ui()
+  File "/Users/sanadatakeshi/Desktop/new_staged_target_project/standalone_main_app/plugins/staged_target/components/radar_chart_dialog.py", line 81, in setup_ui
+    self.draw_radar_chart()
+AttributeError: 'RadarChartDialog' object has no attribute 'draw_radar_chart'
+ERROR:standalone_main_app.plugins.staged_target.staged_target_tab:レーダーチャート表示エラー: 'RadarChartDialog' object has no attribute 'draw_radar_chart'
+Traceback (most recent call last):
+  File "/Users/sanadatakeshi/Desktop/new_staged_target_project/standalone_main_app/plugins/staged_target/staged_target_tab.py", line 182, in show_radar_chart
+    dialog = RadarChartDialog(self, radar_stages)
+  File "/Users/sanadatakeshi/Desktop/new_staged_target_project/standalone_main_app/plugins/staged_target/components/radar_chart_dialog.py", line 40, in __init__
+    self.setup_ui()
+  File "/Users/sanadatakeshi/Desktop/new_staged_target_project/standalone_main_app/plugins/staged_target/components/radar_chart_dialog.py", line 81, in setup_ui
+    self.draw_radar_chart()
+AttributeError: 'RadarChartDialog' object has no attribute 'draw_radar_chart'
